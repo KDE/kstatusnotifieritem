@@ -6,7 +6,7 @@
 */
 
 #include "kstatusnotifieritem.h"
-#include "config-knotifications.h"
+#include "config-kstatusnotifieritem.h"
 #include "debug_p.h"
 #include "kstatusnotifieritemprivate_p.h"
 
@@ -82,7 +82,7 @@ KStatusNotifierItem::~KStatusNotifierItem()
 
 QString KStatusNotifierItem::id() const
 {
-    // qCDebug(LOG_KNOTIFICATIONS) << "id requested" << d->id;
+    // qCDebug(LOG_KSTATUSNOTIFIERITEM) << "id requested" << d->id;
     return d->id;
 }
 
@@ -872,7 +872,7 @@ void KStatusNotifierItemPrivate::registerToDaemon()
 {
     bool useLegacy = false;
 #ifdef QT_DBUS_LIB
-    qCDebug(LOG_KNOTIFICATIONS) << "Registering a client interface to the KStatusNotifierWatcher";
+    qCDebug(LOG_KSTATUSNOTIFIERITEM) << "Registering a client interface to the KStatusNotifierWatcher";
     if (!statusNotifierWatcher) {
         statusNotifierWatcher = new org::kde::StatusNotifierWatcher(QString::fromLatin1(s_statusNotifierWatcherServiceName),
                                                                     QStringLiteral("/StatusNotifierWatcher"),
@@ -892,7 +892,7 @@ void KStatusNotifierItemPrivate::registerToDaemon()
             watcher->deleteLater();
             QDBusPendingReply<QVariant> reply = *watcher;
             if (reply.isError()) {
-                qCDebug(LOG_KNOTIFICATIONS) << "Failed to read protocol version of KStatusNotifierWatcher";
+                qCDebug(LOG_KSTATUSNOTIFIERITEM) << "Failed to read protocol version of KStatusNotifierWatcher";
                 setLegacySystemTrayEnabled(true);
             } else {
                 bool ok = false;
@@ -901,13 +901,13 @@ void KStatusNotifierItemPrivate::registerToDaemon()
                     statusNotifierWatcher->RegisterStatusNotifierItem(statusNotifierItemDBus->service());
                     setLegacySystemTrayEnabled(false);
                 } else {
-                    qCDebug(LOG_KNOTIFICATIONS) << "KStatusNotifierWatcher has incorrect protocol version";
+                    qCDebug(LOG_KSTATUSNOTIFIERITEM) << "KStatusNotifierWatcher has incorrect protocol version";
                     setLegacySystemTrayEnabled(true);
                 }
             }
         });
     } else {
-        qCDebug(LOG_KNOTIFICATIONS) << "KStatusNotifierWatcher not reachable";
+        qCDebug(LOG_KSTATUSNOTIFIERITEM) << "KStatusNotifierWatcher not reachable";
         useLegacy = true;
     }
 #else
@@ -921,7 +921,7 @@ void KStatusNotifierItemPrivate::serviceChange(const QString &name, const QStrin
     Q_UNUSED(name)
     if (newOwner.isEmpty()) {
         // unregistered
-        qCDebug(LOG_KNOTIFICATIONS) << "Connection to the KStatusNotifierWatcher lost";
+        qCDebug(LOG_KSTATUSNOTIFIERITEM) << "Connection to the KStatusNotifierWatcher lost";
         setLegacyMode(true);
 #ifdef QT_DBUS_LIB
         delete statusNotifierWatcher;
@@ -982,8 +982,8 @@ void KStatusNotifierItemPrivate::setLegacySystemTrayEnabled(bool enabled)
         } else if (isKde) {
             // prevent infinite recursion if the KDE platform plugin is loaded
             // but SNI is not available; see bug 350785
-            qCWarning(LOG_KNOTIFICATIONS) << "env says KDE is running but SNI unavailable -- check "
-                                             "KDE_FULL_SESSION and XDG_CURRENT_DESKTOP";
+            qCWarning(LOG_KSTATUSNOTIFIERITEM) << "env says KDE is running but SNI unavailable -- check "
+                                                  "KDE_FULL_SESSION and XDG_CURRENT_DESKTOP";
             return;
         }
 

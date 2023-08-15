@@ -13,7 +13,7 @@
 #include <QString>
 #include <QWindow>
 
-#include <knotifications_export.h>
+#include <kstatusnotifieritem_export.h>
 
 #include <memory>
 
@@ -58,7 +58,7 @@ class KStatusNotifierItemPrivate;
  * @author Marco Martin <notmart@gmail.com>
  * @since 4.4
  */
-class KNOTIFICATIONS_EXPORT KStatusNotifierItem : public QObject
+class KSTATUSNOTIFIERITEM_EXPORT KStatusNotifierItem : public QObject
 {
     Q_OBJECT
 
