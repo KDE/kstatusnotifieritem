@@ -42,7 +42,8 @@
 #endif
 
 #ifdef Q_OS_MACOS
-namespace MacUtils {
+namespace MacUtils
+{
 void setBadgeLabelText(const QString &s);
 }
 #endif
