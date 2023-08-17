@@ -4,7 +4,7 @@ A library to allow applications to provide simple indications of
 information to be displayed to users of the application through the
 interface shell.
 
-Copyright 2009 Canonical Ltd.
+SPDX-FileCopyrightText: 2009 Canonical Ltd.
 
 Authors:
     Ted Gould <ted@canonical.com>
