@@ -156,6 +156,3 @@ if (TARGET Qt6::DBus)
         RENAME kf6_org.kde.StatusNotifierWatcher.xml)
 endif()
 
-include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KStatusNotifierItem LIB_NAME KF6StatusNotifierItem DEPS "widgets" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KStatusNotifierItem)
-install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
