@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kstatusnotifieritem6_qt\n"
+"Language-Team: Japanese <kde-jp@kde.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: qtrich\n"
+"X-Qt-Contexts: true\n"
+
+#: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1113
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "&Minimize"
+msgstr ""
+
+#: kstatusnotifieritem.cpp:852
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "Quit"
+msgstr ""
+
+#: kstatusnotifieritem.cpp:1110
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "&Restore"
+msgstr ""
+
+#: kstatusnotifieritem.cpp:1126
+msgctxt "KStatusNotifierItem|@title:window"
+msgid "Confirm Quit From System Tray"
+msgstr ""
+
+#: kstatusnotifieritem.cpp:1127
+#, qt-format
+msgctxt "KStatusNotifierItem|"
+msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
+msgstr ""
+
+#: kstatusnotifieritem.cpp:1132
+msgctxt "KStatusNotifierItem|@action:button"
+msgid "Quit"
+msgstr ""
