@@ -33,11 +33,11 @@
 #endif // HAVE_DBUSMENUQT
 #endif
 
-#include <KWindowInfo>
 #include <QTimer>
 #include <kwindowsystem.h>
 
 #if HAVE_X11
+#include <KWindowInfo>
 #include <KX11Extras>
 #endif
 
@@ -517,8 +517,10 @@ void KStatusNotifierItem::setAssociatedWindow(QWindow *associatedWidget)
             connect(action, SIGNAL(triggered(bool)), this, SLOT(minimizeRestore()));
         }
 
+#if HAVE_X11
         KWindowInfo info(d->associatedWindow->winId(), NET::WMDesktop);
         d->onAllDesktops = info.onAllDesktops();
+#endif
     } else {
         if (d->menu && d->hasQuit) {
             QAction *action = d->actionCollection.value(QStringLiteral("minimizeRestore"));
