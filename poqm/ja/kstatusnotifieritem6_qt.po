@@ -11,33 +11,33 @@ msgstr ""
 "X-Text-Markup: qtrich\n"
 "X-Qt-Contexts: true\n"
 
-#: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1113
+#: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1115
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr ""
 
-#: kstatusnotifieritem.cpp:852
+#: kstatusnotifieritem.cpp:854
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr ""
 
-#: kstatusnotifieritem.cpp:1110
+#: kstatusnotifieritem.cpp:1112
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr ""
 
-#: kstatusnotifieritem.cpp:1126
+#: kstatusnotifieritem.cpp:1128
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr ""
 
-#: kstatusnotifieritem.cpp:1127
+#: kstatusnotifieritem.cpp:1129
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr ""
 
-#: kstatusnotifieritem.cpp:1132
+#: kstatusnotifieritem.cpp:1134
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr ""
