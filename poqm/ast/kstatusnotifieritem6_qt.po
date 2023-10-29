@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-10-25 11:51+0200\n"
+"PO-Revision-Date: 2023-10-28 21:55+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -16,17 +16,17 @@ msgstr ""
 #: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1115
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
-msgstr ""
+msgstr "&Minimizar"
 
 #: kstatusnotifieritem.cpp:854
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
-msgstr ""
+msgstr "Colar"
 
 #: kstatusnotifieritem.cpp:1112
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
-msgstr ""
+msgstr "&Restaurar"
 
 #: kstatusnotifieritem.cpp:1128
 msgctxt "KStatusNotifierItem|@title:window"
@@ -42,4 +42,4 @@ msgstr ""
 #: kstatusnotifieritem.cpp:1134
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
-msgstr ""
+msgstr "Colar"
