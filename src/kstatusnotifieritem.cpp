@@ -518,8 +518,10 @@ void KStatusNotifierItem::setAssociatedWindow(QWindow *associatedWidget)
         }
 
 #if HAVE_X11
-        KWindowInfo info(d->associatedWindow->winId(), NET::WMDesktop);
-        d->onAllDesktops = info.onAllDesktops();
+        if (KWindowSystem::isPlatformX11()) {
+            KWindowInfo info(d->associatedWindow->winId(), NET::WMDesktop);
+            d->onAllDesktops = info.onAllDesktops();
+        }
 #endif
     } else {
         if (d->menu && d->hasQuit) {
@@ -685,30 +687,31 @@ bool KStatusNotifierItemPrivate::checkVisibility(QPoint pos, bool perform)
         return true;
     } else if (QGuiApplication::platformName() == QLatin1String("xcb")) {
 #if HAVE_X11
-        const KWindowInfo info1(associatedWindow->winId(), NET::XAWMState | NET::WMState | NET::WMDesktop);
-        QListIterator<WId> it(KX11Extras::stackingOrder());
-        it.toBack();
-        while (it.hasPrevious()) {
-            WId id = it.previous();
-            if (id == associatedWindow->winId()) {
-                break;
-            }
+        if (KWindowSystem::isPlatformX11()) {
+            const KWindowInfo info1(associatedWindow->winId(), NET::XAWMState | NET::WMState | NET::WMDesktop);
+            QListIterator<WId> it(KX11Extras::stackingOrder());
+            it.toBack();
+            while (it.hasPrevious()) {
+                WId id = it.previous();
+                if (id == associatedWindow->winId()) {
+                    break;
+                }
 
-            KWindowInfo info2(id, NET::WMDesktop | NET::WMGeometry | NET::XAWMState | NET::WMState | NET::WMWindowType);
+                KWindowInfo info2(id, NET::WMDesktop | NET::WMGeometry | NET::XAWMState | NET::WMState | NET::WMWindowType);
 
-            if (info2.mappingState() != NET::Visible) {
-                continue; // not visible on current desktop -> ignore
-            }
+                if (info2.mappingState() != NET::Visible) {
+                    continue; // not visible on current desktop -> ignore
+                }
 
-            if (!info2.geometry().intersects(associatedWindow->geometry())) {
-                continue; // not obscuring the window -> ignore
-            }
+                if (!info2.geometry().intersects(associatedWindow->geometry())) {
+                    continue; // not obscuring the window -> ignore
+                }
 
-            if (!info1.hasState(NET::KeepAbove) && info2.hasState(NET::KeepAbove)) {
-                continue; // obscured by window kept above -> ignore
-            }
+                if (!info1.hasState(NET::KeepAbove) && info2.hasState(NET::KeepAbove)) {
+                    continue; // obscured by window kept above -> ignore
+                }
 
-            /* clang-format off */
+                /* clang-format off */
             static constexpr auto flags = (NET::NormalMask
                                            | NET::DesktopMask
                                            | NET::DockMask
@@ -719,34 +722,35 @@ bool KStatusNotifierItemPrivate::checkVisibility(QPoint pos, bool perform)
                                            | NET::TopMenuMask
                                            | NET::UtilityMask
                                            | NET::SplashMask);
-            /* clang-format on */
-            NET::WindowType type = info2.windowType(flags);
+                /* clang-format on */
+                NET::WindowType type = info2.windowType(flags);
 
-            if (type == NET::Dock || type == NET::TopMenu) {
-                continue; // obscured by dock or topmenu -> ignore
+                if (type == NET::Dock || type == NET::TopMenu) {
+                    continue; // obscured by dock or topmenu -> ignore
+                }
+
+                if (perform) {
+                    KX11Extras::forceActiveWindow(associatedWindow->winId());
+                    Q_EMIT q->activateRequested(true, pos);
+                }
+
+                return true;
+            }
+
+            // not on current desktop?
+            if (!info1.isOnCurrentDesktop()) {
+                if (perform) {
+                    KWindowSystem::activateWindow(associatedWindow);
+                    Q_EMIT q->activateRequested(true, pos);
+                }
+
+                return true;
             }
 
             if (perform) {
-                KX11Extras::forceActiveWindow(associatedWindow->winId());
-                Q_EMIT q->activateRequested(true, pos);
+                minimizeRestore(false); // hide
+                Q_EMIT q->activateRequested(false, pos);
             }
-
-            return true;
-        }
-
-        // not on current desktop?
-        if (!info1.isOnCurrentDesktop()) {
-            if (perform) {
-                KWindowSystem::activateWindow(associatedWindow);
-                Q_EMIT q->activateRequested(true, pos);
-            }
-
-            return true;
-        }
-
-        if (perform) {
-            minimizeRestore(false); // hide
-            Q_EMIT q->activateRequested(false, pos);
         }
 #endif
         return false;
@@ -1152,16 +1156,18 @@ void KStatusNotifierItemPrivate::hideMenu()
 void KStatusNotifierItemPrivate::minimizeRestore(bool show)
 {
 #if HAVE_X11
-    KWindowInfo info(associatedWindow->winId(), NET::WMDesktop);
+    if (KWindowSystem::isPlatformX11()) {
+        KWindowInfo info(associatedWindow->winId(), NET::WMDesktop);
 
-    if (show) {
-        if (onAllDesktops) {
-            KX11Extras::setOnAllDesktops(associatedWindow->winId(), true);
+        if (show) {
+            if (onAllDesktops) {
+                KX11Extras::setOnAllDesktops(associatedWindow->winId(), true);
+            } else {
+                KX11Extras::setCurrentDesktop(info.desktop());
+            }
         } else {
-            KX11Extras::setCurrentDesktop(info.desktop());
+            onAllDesktops = info.onAllDesktops();
         }
-    } else {
-        onAllDesktops = info.onAllDesktops();
     }
 #endif
 
