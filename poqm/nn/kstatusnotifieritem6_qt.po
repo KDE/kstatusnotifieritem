@@ -18,33 +18,33 @@ msgstr ""
 "X-Text-Markup: qtrich\n"
 "X-Qt-Contexts: true\n"
 
-#: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1115
+#: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1119
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&Minimer"
 
-#: kstatusnotifieritem.cpp:854
+#: kstatusnotifieritem.cpp:858
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: kstatusnotifieritem.cpp:1112
+#: kstatusnotifieritem.cpp:1116
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Gjenopprett"
 
-#: kstatusnotifieritem.cpp:1128
+#: kstatusnotifieritem.cpp:1132
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "Stadfest «Avslutt» frå systemtrauet"
 
-#: kstatusnotifieritem.cpp:1129
+#: kstatusnotifieritem.cpp:1133
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>Er du sikker på at du vil avslutta <b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1134
+#: kstatusnotifieritem.cpp:1138
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "Avslutt"
