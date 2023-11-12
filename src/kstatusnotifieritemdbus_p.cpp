@@ -12,7 +12,6 @@
 
 #include <QMenu>
 
-#include <KWindowInfo>
 #include <kwindowsystem.h>
 
 #include "statusnotifierwatcher_interface.h"
