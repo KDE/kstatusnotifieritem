@@ -118,7 +118,7 @@ public:
      * @param parent the parent object for this object. If the object passed in as
      * a parent is also a QWidget, it will  be used as the main application window
      * represented by this icon and will be shown/hidden when an activation is requested.
-     * @see associatedWidget
+     * @see associatedWindow
      **/
     explicit KStatusNotifierItem(QObject *parent = nullptr);
 
@@ -138,7 +138,7 @@ public:
      * @param parent the parent object for this object. If the object passed in as
      * a parent is also a QWidget, it will  be used as the main application window
      * represented by this icon and will be shown/hidden when an activation is requested.
-     * @see associatedWidget
+     * @see associatedWindow
      **/
     explicit KStatusNotifierItem(const QString &id, QObject *parent = nullptr);
 
@@ -433,23 +433,23 @@ public:
 public Q_SLOTS:
 
     /**
-     * Shows the main widget and try to position it on top
-     * of the other windows, if the widget is already visible, hide it.
+     * Shows the main window and try to position it on top
+     * of the other windows, if the window is already visible, hide it.
      *
      * @param pos if it's a valid position it represents the mouse coordinates when the event was triggered
      */
     virtual void activate(const QPoint &pos = QPoint());
 
     /**
-     * Hides the main widget, if not already hidden.
+     * Hides the main window, if not already hidden.
      *
      * Stores some information about the window which otherwise would be lost due to unmapping
-     * from the window system. Use when toggling the main widget via activate(const QPoint &)
+     * from the window system. Use when toggling the main window via activate(const QPoint &)
      * is not wanted, but instead the hidden state should be reached in any case.
      *
-     * @since 5.91
+     * @since 6.0
      */
-    void hideAssociatedWidget();
+    void hideAssociatedWindow();
 
 Q_SIGNALS:
     /**

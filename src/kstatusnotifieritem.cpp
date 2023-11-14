@@ -487,10 +487,10 @@ QMenu *KStatusNotifierItem::contextMenu() const
     return d->menu;
 }
 
-void KStatusNotifierItem::setAssociatedWindow(QWindow *associatedWidget)
+void KStatusNotifierItem::setAssociatedWindow(QWindow *associatedWindow)
 {
-    if (associatedWidget) {
-        d->associatedWindow = associatedWidget;
+    if (associatedWindow) {
+        d->associatedWindow = associatedWindow;
         d->associatedWindow->installEventFilter(this);
         d->associatedWindowPos = QPoint(-1, -1);
     } else {
@@ -651,7 +651,7 @@ void KStatusNotifierItem::activate(const QPoint &pos)
     d->checkVisibility(pos);
 }
 
-void KStatusNotifierItem::hideAssociatedWidget()
+void KStatusNotifierItem::hideAssociatedWindow()
 {
     if (!d->associatedWindow) {
         return;
