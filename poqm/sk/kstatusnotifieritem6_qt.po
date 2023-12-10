@@ -1,48 +1,47 @@
+# translation of kstatusnotifieritem6_qt.po to Slovak
+# SPDX-FileCopyrightText: 2023 Roman Paholík <wizzardsk@gmail.com>
 msgid ""
 msgstr ""
-"Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-12-09 09:24\n"
-"Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
+"Project-Id-Version: kstatusnotifieritem6_qt\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-07-13 02:10+0000\n"
+"PO-Revision-Date: 2023-12-09 09:09+0100\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Qt-Contexts: true\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/kstatusnotifieritem/"
-"kstatusnotifieritem6_qt.pot\n"
-"X-Crowdin-File-ID: 44675\n"
+"X-Generator: Lokalize 23.08.3\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1119
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
-msgstr "最小化(&M)"
+msgstr "Minimalizovať"
 
 #: kstatusnotifieritem.cpp:858
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
-msgstr "退出"
+msgstr "Ukončiť"
 
 #: kstatusnotifieritem.cpp:1116
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
-msgstr "还原(&R)"
+msgstr "Obnoviť"
 
 #: kstatusnotifieritem.cpp:1132
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
-msgstr "确认从系统托盘退出"
+msgstr "Potvrdiť ukončenie zo systémovej lišty"
 
 #: kstatusnotifieritem.cpp:1133
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-msgstr "<qt>您确定要退出 <b>%1</b> 吗？</qt>"
+msgstr "<qt>Naozaj chcete ukončiť <b>%1</b>?</qt>"
 
 #: kstatusnotifieritem.cpp:1138
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
-msgstr "退出"
+msgstr "Ukončiť"
