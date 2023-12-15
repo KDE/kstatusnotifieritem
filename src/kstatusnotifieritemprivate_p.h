@@ -157,7 +157,7 @@ public:
 
     QMenu *menu;
     QHash<QString, QAction *> actionCollection;
-    QWindow *associatedWindow;
+    QPointer<QWindow> associatedWindow;
     QPoint associatedWindowPos;
     QAction *titleAction;
 
