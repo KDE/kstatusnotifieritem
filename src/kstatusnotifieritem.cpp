@@ -23,6 +23,10 @@
 #include <QFontDatabase>
 #endif
 
+#define slots
+#include <QtWidgets/private/qwidgetwindow_p.h>
+#undef slots
+
 #ifdef QT_DBUS_LIB
 #include "kstatusnotifieritemdbus_p.h"
 
@@ -685,8 +689,8 @@ bool KStatusNotifierItemPrivate::checkVisibility(QPoint pos, bool perform)
         }
 
         return true;
-    } else if (QGuiApplication::platformName() == QLatin1String("xcb")) {
 #if HAVE_X11
+    } else if (QGuiApplication::platformName() == QLatin1String("xcb")) {
         if (KWindowSystem::isPlatformX11()) {
             const KWindowInfo info1(associatedWindow->winId(), NET::XAWMState | NET::WMState | NET::WMDesktop);
             QListIterator<WId> it(KX11Extras::stackingOrder());
@@ -752,8 +756,8 @@ bool KStatusNotifierItemPrivate::checkVisibility(QPoint pos, bool perform)
                 Q_EMIT q->activateRequested(false, pos);
             }
         }
-#endif
         return false;
+#endif
     } else {
         if (perform) {
             minimizeRestore(false); // hide
@@ -1174,13 +1178,21 @@ void KStatusNotifierItemPrivate::minimizeRestore(bool show)
     if (show) {
         Qt::WindowState state = (Qt::WindowState)(associatedWindow->windowState() & ~Qt::WindowMinimized);
         associatedWindow->setWindowState(state);
-        associatedWindow->show();
-        associatedWindow->raise();
-        if (associatedWindow) {
-            KWindowSystem::activateWindow(associatedWindow);
+        // Work around https://bugreports.qt.io/browse/QTBUG-120316
+        if (auto *widgetwindow = static_cast<QWidgetWindow*>(associatedWindow->qt_metacast("QWidgetWindow"))) {
+            widgetwindow->widget()->show();
+        } else {
+            associatedWindow->show();
         }
+        associatedWindow->raise();
+        KWindowSystem::activateWindow(associatedWindow);
     } else {
-        associatedWindow->hide();
+        // Work around https://bugreports.qt.io/browse/QTBUG-120316
+        if (auto *widgetwindow = static_cast<QWidgetWindow*>(associatedWindow->qt_metacast("QWidgetWindow"))) {
+            widgetwindow->widget()->hide();
+        } else {
+            associatedWindow->hide();
+        }
     }
 }
 

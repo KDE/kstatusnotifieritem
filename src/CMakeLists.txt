@@ -84,7 +84,7 @@ ecm_generate_export_header(KF6StatusNotifierItem
 
 target_include_directories(KF6StatusNotifierItem INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KStatusNotifierItem>")
 
-target_link_libraries(KF6StatusNotifierItem PUBLIC Qt6::Gui Qt6::Widgets)
+target_link_libraries(KF6StatusNotifierItem PUBLIC Qt6::Gui Qt6::Widgets Qt6::WidgetsPrivate)
 
 if (TARGET Qt6::DBus)
    target_link_libraries(KF6StatusNotifierItem PUBLIC Qt6::DBus)
