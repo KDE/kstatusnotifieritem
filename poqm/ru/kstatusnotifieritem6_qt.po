@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2023 Alexander Yavorsky <kekcuha@gmail.com>
+# SPDX-FileCopyrightText: 2023, 2024 Alexander Yavorsky <kekcuha@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-12-05 16:19+0300\n"
+"PO-Revision-Date: 2024-02-07 10:42+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -12,12 +12,12 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 23.08.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1119
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
-msgstr ""
+msgstr "&Свернуть"
 
 #: kstatusnotifieritem.cpp:858
 msgctxt "KStatusNotifierItem|@action:inmenu"
@@ -27,20 +27,20 @@ msgstr "Выход"
 #: kstatusnotifieritem.cpp:1116
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
-msgstr ""
+msgstr "&Восстановить"
 
 #: kstatusnotifieritem.cpp:1132
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
-msgstr ""
+msgstr "Подтверждение выхода из программы"
 
 #: kstatusnotifieritem.cpp:1133
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-msgstr ""
+msgstr "<qt>Выйти из приложения<b>%1</b>?</qt>"
 
 #: kstatusnotifieritem.cpp:1138
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
-msgstr ""
+msgstr "Выход"
