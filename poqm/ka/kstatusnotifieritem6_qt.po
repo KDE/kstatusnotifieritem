@@ -13,33 +13,33 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 "X-Generator: Poedit 3.3.2\n"
 
-#: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1119
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1123
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&ჩაკეცვა"
 
-#: kstatusnotifieritem.cpp:858
+#: kstatusnotifieritem.cpp:862
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "გასვლა"
 
-#: kstatusnotifieritem.cpp:1116
+#: kstatusnotifieritem.cpp:1120
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "ა&ღდგენა"
 
-#: kstatusnotifieritem.cpp:1132
+#: kstatusnotifieritem.cpp:1136
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "სისტემური პანელიდან გამოსვლის დასტური"
 
-#: kstatusnotifieritem.cpp:1133
+#: kstatusnotifieritem.cpp:1137
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>ნამდვილად გსურთ გასვლა <b>%1</b>'?</qt>"
 
-#: kstatusnotifieritem.cpp:1138
+#: kstatusnotifieritem.cpp:1142
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "გასვლა"
