@@ -760,8 +760,13 @@ bool KStatusNotifierItemPrivate::checkVisibility(QPoint pos, bool perform)
 #endif
     } else {
         if (perform) {
-            minimizeRestore(false); // hide
-            Q_EMIT q->activateRequested(false, pos);
+            if (!associatedWindow->isActive()) {
+                KWindowSystem::activateWindow(associatedWindow);
+                Q_EMIT q->activateRequested(true, pos);
+            } else {
+                minimizeRestore(false); // hide
+                Q_EMIT q->activateRequested(false, pos);
+            }
         }
         return false;
     }
