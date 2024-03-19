@@ -20,33 +20,33 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1123
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1128
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&Minimumigi"
 
-#: kstatusnotifieritem.cpp:862
+#: kstatusnotifieritem.cpp:867
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Forlasi"
 
-#: kstatusnotifieritem.cpp:1120
+#: kstatusnotifieritem.cpp:1125
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Restaŭri"
 
-#: kstatusnotifieritem.cpp:1136
+#: kstatusnotifieritem.cpp:1141
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "Konfirmi Forlason el Sistempleto"
 
-#: kstatusnotifieritem.cpp:1137
+#: kstatusnotifieritem.cpp:1142
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>Ĉu vi certas ke vi volas forlasi <b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1142
+#: kstatusnotifieritem.cpp:1147
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "Forlasi"
