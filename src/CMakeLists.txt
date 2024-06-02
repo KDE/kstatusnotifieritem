@@ -18,7 +18,7 @@ if(APPLE)
             macutils.mm)
 endif()
 
-if (TARGET Qt6::DBus)
+if (HAVE_DBUS)
   target_sources(KF6StatusNotifierItem PRIVATE
     kstatusnotifieritemdbus_p.cpp
   )
@@ -32,7 +32,7 @@ ecm_qt_declare_logging_category(KF6StatusNotifierItem
     EXPORT KSTATUSNOTIFIERITEM
 )
 
-if (TARGET Qt6::DBus)
+if (HAVE_DBUS)
    set(HAVE_DBUSMENUQT 1)
    qt_add_dbus_adaptor(dbusmenu_qt_SRCS
      ${CMAKE_CURRENT_SOURCE_DIR}/libdbusmenu-qt/com.canonical.dbusmenu.xml
@@ -86,7 +86,7 @@ target_include_directories(KF6StatusNotifierItem INTERFACE "$<INSTALL_INTERFACE:
 
 target_link_libraries(KF6StatusNotifierItem PUBLIC Qt6::Gui Qt6::Widgets)
 
-if (TARGET Qt6::DBus)
+if (HAVE_DBUS)
    target_link_libraries(KF6StatusNotifierItem PUBLIC Qt6::DBus)
 endif()
 
@@ -146,7 +146,7 @@ if(BUILD_QCH)
     )
 endif()
 
-if (TARGET Qt6::DBus)
+if (HAVE_DBUS)
     install(FILES
         org.kde.StatusNotifierItem.xml
         DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR}

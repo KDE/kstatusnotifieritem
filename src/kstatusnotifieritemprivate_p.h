@@ -15,9 +15,10 @@
 #include <QSystemTrayIcon>
 #include <QWheelEvent>
 
+#include "config-kstatusnotifieritem.h"
 #include "kstatusnotifieritem.h"
 
-#ifdef QT_DBUS_LIB
+#if HAVE_DBUS
 #include "kstatusnotifieritemdbus_p.h"
 
 #include "notifications_interface.h"
@@ -116,7 +117,7 @@ public:
 
     KStatusNotifierItem *q;
 
-#ifdef QT_DBUS_LIB
+#if HAVE_DBUS
     KDbusImageStruct imageToStruct(const QImage &image);
     KDbusImageVector iconToVector(const QIcon &icon);
 

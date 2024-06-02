@@ -44,10 +44,6 @@ set(REQUIRED_QT_VERSION 6.5.0)
 
 find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Widgets)
 
-if (NOT ANDROID AND NOT WIN32 AND NOT APPLE)
-    find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED DBus)
-endif()
-
 if (NOT APPLE AND NOT WIN32)
     option(WITHOUT_X11 "Build without X11 support (skips finding X11)." OFF)
     if(NOT WITHOUT_X11)
@@ -58,12 +54,15 @@ endif()
 
 find_package(KF6WindowSystem ${KF_DEP_VERSION} REQUIRED)
 
-if (NOT APPLE AND NOT ANDROID AND NOT WIN32)
-    find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED DBus)
+# shall we use DBus?
+# enabled per default on Linux & BSD systems
+set(USE_DBUS_DEFAULT OFF)
+if(UNIX AND NOT APPLE AND NOT ANDROID AND NOT HAIKU)
+    set(USE_DBUS_DEFAULT ON)
 endif()
-
-set(HAVE_DBUS FALSE)
-if (TARGET Qt6::DBus)
+option(USE_DBUS "Build components using DBus" ${USE_DBUS_DEFAULT})
+if(USE_DBUS)
+    find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED DBus)
     set(HAVE_DBUS TRUE)
 endif()
 
