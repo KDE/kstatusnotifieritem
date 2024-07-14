@@ -992,7 +992,9 @@ void KStatusNotifierItemPrivate::setLegacySystemTrayEnabled(bool enabled)
     }
 
     if (enabled) {
-        bool isKde = !qEnvironmentVariableIsEmpty("KDE_FULL_SESSION") || qgetenv("XDG_CURRENT_DESKTOP") == "KDE";
+        bool isKde = !qEnvironmentVariableIsEmpty("KDE_FULL_SESSION")
+            || qgetenv("XDG_CURRENT_DESKTOP") == "KDE"
+            || qgetenv("QT_QPA_PLATFORMTHEME").toLower() == "kde";
         if (!systemTrayIcon && !isKde) {
             if (!QSystemTrayIcon::isSystemTrayAvailable()) {
                 return;
@@ -1006,8 +1008,7 @@ void KStatusNotifierItemPrivate::setLegacySystemTrayEnabled(bool enabled)
         } else if (isKde) {
             // prevent infinite recursion if the KDE platform plugin is loaded
             // but SNI is not available; see bug 350785
-            qCWarning(LOG_KSTATUSNOTIFIERITEM) << "env says KDE is running but SNI unavailable -- check "
-                                                  "KDE_FULL_SESSION and XDG_CURRENT_DESKTOP";
+            qCWarning(LOG_KSTATUSNOTIFIERITEM) << "KDE platform plugin is loaded but SNI unavailable";
             return;
         }
 
