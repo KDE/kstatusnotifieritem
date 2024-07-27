@@ -430,6 +430,17 @@ public:
      */
     QString providedToken() const;
 
+    /**
+     * Cancelles an ongoing quit operation.
+     *
+     * Call this in a slot connected to quitRequested().
+     *
+     * @see quitRequested()
+     *
+     * @since 6.5
+     */
+    void abortQuit();
+
 public Q_SLOTS:
 
     /**
@@ -481,6 +492,16 @@ Q_SIGNALS:
      *  trigger this signal, QPoint() if it's not the consequence of a mouse click.
      */
     void secondaryActivateRequested(const QPoint &pos);
+
+    /**
+     * Emitted when the Quit action is triggered.
+     *
+     * If abortQuit() is called from the slot the quit is cancelled.
+     * This allows to e.g. display a custom confirmation prompt.
+     *
+     * @since 6.5
+     */
+    void quitRequested();
 
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;

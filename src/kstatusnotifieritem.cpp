@@ -869,7 +869,7 @@ void KStatusNotifierItemPrivate::init(const QString &extraId)
     // cannot yet convert to function-pointer-based connect:
     // some apps like kalarm or korgac have a hack to rewire the connection
     // of the "quit" action to a own slot, and rely on the name-based slot to disconnect
-    // TODO: extend KStatusNotifierItem API to support such needs
+    // quitRequested/abortQuit was added for this use case
     QObject::connect(action, SIGNAL(triggered()), q, SLOT(maybeQuit()));
     actionCollection.insert(QStringLiteral("quit"), action);
 
@@ -1131,8 +1131,20 @@ void KStatusNotifierItemPrivate::contextMenuAboutToShow()
     }
 }
 
+void KStatusNotifierItem::abortQuit()
+{
+    d->quitAborted = true;
+}
+
 void KStatusNotifierItemPrivate::maybeQuit()
 {
+    Q_EMIT q->quitRequested();
+
+    if (quitAborted) {
+        quitAborted = false;
+        return;
+    }
+
     QString caption = QGuiApplication::applicationDisplayName();
     if (caption.isEmpty()) {
         caption = QCoreApplication::applicationName();
