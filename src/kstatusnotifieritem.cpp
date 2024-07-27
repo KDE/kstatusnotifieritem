@@ -544,25 +544,33 @@ QWindow *KStatusNotifierItem::associatedWindow() const
     return d->associatedWindow;
 }
 
+#if KSTATUSNOTIFIERITEM_BUILD_DEPRECATED_SINCE(6, 5)
 QList<QAction *> KStatusNotifierItem::actionCollection() const
 {
     return d->actionCollection.values();
 }
+#endif
 
+#if KSTATUSNOTIFIERITEM_BUILD_DEPRECATED_SINCE(6, 5)
 void KStatusNotifierItem::addAction(const QString &name, QAction *action)
 {
     d->actionCollection.insert(name, action);
 }
+#endif
 
+#if KSTATUSNOTIFIERITEM_BUILD_DEPRECATED_SINCE(6, 5)
 void KStatusNotifierItem::removeAction(const QString &name)
 {
     d->actionCollection.remove(name);
 }
+#endif
 
+#if KSTATUSNOTIFIERITEM_BUILD_DEPRECATED_SINCE(6, 5)
 QAction *KStatusNotifierItem::action(const QString &name) const
 {
     return d->actionCollection.value(name);
 }
+#endif
 
 void KStatusNotifierItem::setStandardActionsEnabled(bool enabled)
 {
