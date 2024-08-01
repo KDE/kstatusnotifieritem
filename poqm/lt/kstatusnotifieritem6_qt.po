@@ -29,18 +29,18 @@ msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "Atku&rti"
 
-#: kstatusnotifieritem.cpp:1141
+#: kstatusnotifieritem.cpp:1153
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "Patvirtinti išjungimą"
 
-#: kstatusnotifieritem.cpp:1142
+#: kstatusnotifieritem.cpp:1154
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>Ar tikrai norite išjungti <b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1147
+#: kstatusnotifieritem.cpp:1159
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "Išjungti"
