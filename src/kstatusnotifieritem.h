@@ -376,42 +376,42 @@ public:
      */
     QWindow *associatedWindow() const;
 
-#if KSTATUSNOTIFIERITEM_ENABLE_DEPRECATED_SINCE(6, 5)
+#if KSTATUSNOTIFIERITEM_ENABLE_DEPRECATED_SINCE(6, 6)
     /**
      * All the actions present in the menu
      *
-     * @deprecated since 6.5, read actions from contextMenu()
+     * @deprecated since 6.6, read actions from contextMenu()
      */
-    KSTATUSNOTIFIERITEM_DEPRECATED_VERSION(6, 5, "Read actions from contextMenu()")
+    KSTATUSNOTIFIERITEM_DEPRECATED_VERSION(6, 6, "Read actions from contextMenu()")
     QList<QAction *> actionCollection() const;
 #endif
 
-#if KSTATUSNOTIFIERITEM_ENABLE_DEPRECATED_SINCE(6, 5)
+#if KSTATUSNOTIFIERITEM_ENABLE_DEPRECATED_SINCE(6, 6)
     /**
      * Adds an action to the actionCollection()
      *
      * @param name the name of the action
      * @param action the action we want to add
      *
-     * @deprecated since 6.5, add actions to contextMenu()
+     * @deprecated since 6.6, add actions to contextMenu()
      */
-    KSTATUSNOTIFIERITEM_DEPRECATED_VERSION(6, 5, "Add actions to contextMenu()")
+    KSTATUSNOTIFIERITEM_DEPRECATED_VERSION(6, 6, "Add actions to contextMenu()")
     void addAction(const QString &name, QAction *action);
 #endif
 
-#if KSTATUSNOTIFIERITEM_ENABLE_DEPRECATED_SINCE(6, 5)
+#if KSTATUSNOTIFIERITEM_ENABLE_DEPRECATED_SINCE(6, 6)
     /**
      * Removes an action from the collection
      *
      * @param name the name of the action
      *
-     * @deprecated since 6.5, remove actions from contextMenu()
+     * @deprecated since 6.6, remove actions from contextMenu()
      */
-    KSTATUSNOTIFIERITEM_DEPRECATED_VERSION(6, 5, "Remove actions from contextMenu()")
+    KSTATUSNOTIFIERITEM_DEPRECATED_VERSION(6, 6, "Remove actions from contextMenu()")
     void removeAction(const QString &name);
 #endif
 
-#if KSTATUSNOTIFIERITEM_ENABLE_DEPRECATED_SINCE(6, 5)
+#if KSTATUSNOTIFIERITEM_ENABLE_DEPRECATED_SINCE(6, 6)
     /**
      * Retrieves an action from the action collection
      * by the action name
@@ -419,11 +419,11 @@ public:
      * @param name the name of the action to retrieve
      * @since 5.12
      *
-     * @deprecated since 6.5. Read actions from contextMenu().
+     * @deprecated since 6.6. Read actions from contextMenu().
      * For controlling the behavior of the Quit action use quitRequested()
      * and abortQuit()
      */
-    KSTATUSNOTIFIERITEM_DEPRECATED_VERSION(6, 5, "See API docs")
+    KSTATUSNOTIFIERITEM_DEPRECATED_VERSION(6, 6, "See API docs")
     QAction *action(const QString &name) const;
 #endif
 
