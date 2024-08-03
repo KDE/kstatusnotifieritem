@@ -13,33 +13,33 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 21.12.3\n"
 
-#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1128
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1136
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&Minimisa"
 
-#: kstatusnotifieritem.cpp:867
+#: kstatusnotifieritem.cpp:875
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Quita"
 
-#: kstatusnotifieritem.cpp:1125
+#: kstatusnotifieritem.cpp:1133
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Restabili"
 
-#: kstatusnotifieritem.cpp:1153
+#: kstatusnotifieritem.cpp:1161
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "Confirma que tu quita de le tabuliero del systema"
 
-#: kstatusnotifieritem.cpp:1154
+#: kstatusnotifieritem.cpp:1162
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt> Tu es secur que tu vole quitar <b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1159
+#: kstatusnotifieritem.cpp:1167
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "Quita"

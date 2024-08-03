@@ -15,33 +15,33 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && n"
 "%100<=4 ? 2 : 3);\n"
 
-#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1128
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1136
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "Strni"
 
-#: kstatusnotifieritem.cpp:867
+#: kstatusnotifieritem.cpp:875
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Zapusti"
 
-#: kstatusnotifieritem.cpp:1125
+#: kstatusnotifieritem.cpp:1133
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "Obnovi"
 
-#: kstatusnotifieritem.cpp:1153
+#: kstatusnotifieritem.cpp:1161
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "Potrdi izhod iz sistemskega pladnja"
 
-#: kstatusnotifieritem.cpp:1154
+#: kstatusnotifieritem.cpp:1162
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>Ali ste prepričani, da želite zapustiti <b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1159
+#: kstatusnotifieritem.cpp:1167
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "Zapusti"

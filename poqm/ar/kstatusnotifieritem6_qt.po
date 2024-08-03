@@ -13,33 +13,33 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Qt-Contexts: true\n"
 
-#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1128
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1136
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "ص&غّر"
 
-#: kstatusnotifieritem.cpp:867
+#: kstatusnotifieritem.cpp:875
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "أنهِ"
 
-#: kstatusnotifieritem.cpp:1125
+#: kstatusnotifieritem.cpp:1133
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "ا&ستعد"
 
-#: kstatusnotifieritem.cpp:1153
+#: kstatusnotifieritem.cpp:1161
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "أكّد الإنهاء من صينية النظام"
 
-#: kstatusnotifieritem.cpp:1154
+#: kstatusnotifieritem.cpp:1162
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>هل أنت متأكد أنك تريد إنهاء <b>%1</b>؟</qt>"
 
-#: kstatusnotifieritem.cpp:1159
+#: kstatusnotifieritem.cpp:1167
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "أنهِ"

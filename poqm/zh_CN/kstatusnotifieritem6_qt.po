@@ -16,33 +16,33 @@ msgstr ""
 "kstatusnotifieritem6_qt.pot\n"
 "X-Crowdin-File-ID: 44675\n"
 
-#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1128
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1136
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "最小化(&M)"
 
-#: kstatusnotifieritem.cpp:867
+#: kstatusnotifieritem.cpp:875
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "退出"
 
-#: kstatusnotifieritem.cpp:1125
+#: kstatusnotifieritem.cpp:1133
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "还原(&R)"
 
-#: kstatusnotifieritem.cpp:1153
+#: kstatusnotifieritem.cpp:1161
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "确认从系统托盘退出"
 
-#: kstatusnotifieritem.cpp:1154
+#: kstatusnotifieritem.cpp:1162
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>您确定要退出 <b>%1</b> 吗？</qt>"
 
-#: kstatusnotifieritem.cpp:1159
+#: kstatusnotifieritem.cpp:1167
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "退出"

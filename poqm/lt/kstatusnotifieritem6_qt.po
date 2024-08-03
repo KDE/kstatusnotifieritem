@@ -14,33 +14,33 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1128
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1136
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&Suskleisti"
 
-#: kstatusnotifieritem.cpp:867
+#: kstatusnotifieritem.cpp:875
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Išjungti"
 
-#: kstatusnotifieritem.cpp:1125
+#: kstatusnotifieritem.cpp:1133
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "Atku&rti"
 
-#: kstatusnotifieritem.cpp:1153
+#: kstatusnotifieritem.cpp:1161
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "Patvirtinti išjungimą"
 
-#: kstatusnotifieritem.cpp:1154
+#: kstatusnotifieritem.cpp:1162
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>Ar tikrai norite išjungti <b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1159
+#: kstatusnotifieritem.cpp:1167
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "Išjungti"
