@@ -55,6 +55,10 @@ class KStatusNotifierItemPrivate;
  * - some implementations of the system tray do not support passing icons by
  *   pixmap and will show a blank icon instead.
  *
+ * @note When used inside a Flatpak it is important to request explicit support
+ * in the Flatpak manifest with the following line.
+ *  --talk-name=org.kde.StatusNotifierWatcher
+ *
  * @author Marco Martin <notmart@gmail.com>
  * @since 4.4
  */
