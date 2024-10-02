@@ -121,30 +121,7 @@ ecm_qt_install_logging_categories(
     DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
 )
 
-if(BUILD_QCH)
-    ecm_add_qch(
-        KF6StatusNotifierItem_QCH
-        NAME KStatusNotifierItem
-        BASE_NAME KF6StatusNotifierItem
-        VERSION ${KF_VERSION}
-        ORG_DOMAIN org.kde
-        SOURCES # using only public headers, to cover only public API
-            ${KStatusNotifierItem_HEADERS}
-        LINK_QCHS
-            Qt6Widgets_QCH
-        INCLUDE_DIRS
-            ${CMAKE_CURRENT_BINARY_DIR}
-        BLANK_MACROS
-            KSTATUSNOTIFIERITEM_EXPORT
-            KSTATUSNOTIFIERITEM_DEPRECATED
-            KSTATUSNOTIFIERITEM_DEPRECATED_EXPORT
-            "KSTATUSNOTIFIERITEM_DEPRECATED_VERSION(x, y, t)"
-            "KSTATUSNOTIFIERITEM_DEPRECATED_VERSION_BELATED(x, y, xt, yt, t)"
-        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        COMPONENT Devel
-    )
-endif()
+ecm_generate_qdoc(KF6StatusNotifierItem kstatusnotifieritem.qdocconf)
 
 if (HAVE_DBUS)
     install(FILES
