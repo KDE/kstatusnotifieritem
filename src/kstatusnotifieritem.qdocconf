@@ -1,0 +1,33 @@
+include($KDE_DOCS/global/qt-module-defaults.qdocconf)
+
+project = KStatusNotifierItem
+description = Class to create tray icons
+
+documentationinheaders = true
+
+headerdirs += .
+sourcedirs += .
+
+excludedirs =+ libdbusmenu-qt
+
+outputformats = HTML
+
+depends += \
+    kde \
+    qtcore \
+    qtgui \
+    qtwidgets
+
+qhp.projects            = KStatusNotifieritem
+
+qhp.KStatusNotifierItem.file                = kstatusnotifieritem.qhp
+qhp.KStatusNotifierItem.namespace           = org.kde.kstatusnotifieritem.$QT_VERSION_TAG
+qhp.KStatusNotifierItem.virtualFolder       = kstatusnotifieritem
+qhp.KStatusNotifierItem.indexTitle          = KStatusNotifierItem
+qhp.KStatusNotifierItem.indexRoot           =
+
+qhp.KStatusNotifierItem.subprojects         = classes
+qhp.KStatusNotifierItem.subprojects.classes.title = C++ Classes
+qhp.KStatusNotifierItem.subprojects.classes.indexTitle = KStatusNotifierItem C++ Classes
+qhp.KStatusNotifierItem.subprojects.classes.selectors = class fake:headerfile
+qhp.KStatusNotifierItem.subprojects.classes.sortPages = true
