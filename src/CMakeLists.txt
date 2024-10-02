@@ -121,6 +121,8 @@ ecm_qt_install_logging_categories(
     DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
 )
 
+ecm_generate_qdoc(KF6StatusNotifierItem kstatusnotifieritem.qdocconf)
+
 if(BUILD_QCH)
     ecm_add_qch(
         KF6StatusNotifierItem_QCH
