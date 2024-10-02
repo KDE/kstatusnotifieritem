@@ -1,0 +1,20 @@
+/*!
+    \page kstatusnotifieritem-index.html
+    \title KStatusNotifierItem
+
+    Status Notifier Item Protocol Implementation
+
+    \section1 Using the Module
+
+    \include {module-use.qdocinc} {using the c++ api}
+
+    \section2 Building with CMake
+
+    \include {module-use.qdocinc} {building with cmake} {KF6} {StatusNotifierItem} {KF6::StatusNotifierItem}
+
+    \section1 API Reference
+
+    \list
+        \li \l{KStatusNotifierItem C++ Classes}
+    \endlist
+*/

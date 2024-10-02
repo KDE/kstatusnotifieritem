@@ -1,0 +1,14 @@
+/*!
+    \module KStatusNotifierItem
+    \title KStatusNotifierItem C++ Classes
+    \ingroup modules
+    \cmakepackage KF6
+    \cmakecomponent StatusNotifierItem
+
+    \brief Components to make a tray icon available over D-Bus.
+
+    The KStatusNotifierItem class makes use of the
+    \l {https://www.freedesktop.org/wiki/Specifications/StatusNotifierItem/}
+    {StatusNotifierItem specification} to expose an implementation-dependent
+    tray icon over D-Bus.
+*/
