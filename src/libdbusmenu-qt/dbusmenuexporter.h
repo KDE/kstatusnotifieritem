@@ -20,6 +20,8 @@ class DBusMenuExporterPrivate;
  * \class DBusMenuExporter
  * \inmodule KStatusNotifierItem
  * \brief Allows to serialize a menu over DBus.
+ *
+ * \internal
  */
 class DBusMenuExporter : public QObject
 {

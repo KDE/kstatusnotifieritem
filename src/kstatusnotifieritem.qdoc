@@ -11,7 +11,4 @@
     \l {https://www.freedesktop.org/wiki/Specifications/StatusNotifierItem/}
     {StatusNotifierItem specification} to expose an implementation-dependent
     tray icon over D-Bus.
-
-    Optionally, you may also export a custom menu associated with the tray icon
-    directly with \l DBusMenuExporter.
 */

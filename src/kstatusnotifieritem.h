@@ -26,7 +26,7 @@ class KStatusNotifierItemPrivate;
  * \class KStatusNotifierItem
  * \inmodule KStatusNotifierItem
  *
- * \brief %KDE Status notifier Item protocol implementation.
+ * \brief KDE Status Notifier Item protocol implementation.
  *
  * This class implements the Status notifier Item D-Bus specification.
  * It provides an icon similar to the classical systemtray icons,
