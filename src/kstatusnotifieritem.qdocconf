@@ -14,7 +14,8 @@ outputformats = HTML
 
 depends += \
     qtcore \
-    qtdbus
+    qtgui \
+    qtwidgets
 
 qhp.projects            = KStatusNotifieritem
 
