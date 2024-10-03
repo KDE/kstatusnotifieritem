@@ -6,15 +6,14 @@ description = Class to create tray icons
 documentationinheaders = true
 
 headerdirs = .
+sourcedirs = .
 
-headers.fileextensions = "*.qdoc *.h"
-
-outputdir  = doc/html
 outputformats = HTML
 
 depends += \
     qtcore \
-    qtdbus
+    qtgui \
+    qtwidgets
 
 qhp.projects            = KStatusNotifieritem
 
