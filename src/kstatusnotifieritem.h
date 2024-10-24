@@ -447,7 +447,7 @@ public:
      * @param title message title
      * @param message the actual text shown to the user
      * @param icon icon to be shown to the user
-     * @param timeout how much time will elaps before hiding the message
+     * @param timeout how much time will elapse before hiding the message
      */
     void showMessage(const QString &title, const QString &message, const QString &icon, int timeout = 10000);
 
