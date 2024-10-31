@@ -35,8 +35,8 @@ ecm_qt_declare_logging_category(KF6StatusNotifierItem
 if (HAVE_DBUS)
    set(HAVE_DBUSMENUQT 1)
    qt_add_dbus_adaptor(dbusmenu_qt_SRCS
-     ${CMAKE_CURRENT_SOURCE_DIR}/libdbusmenu-qt/com.canonical.dbusmenu.xml
-     ${CMAKE_CURRENT_SOURCE_DIR}/libdbusmenu-qt/dbusmenuexporterdbus_p.h DBusMenuExporterDBus
+     libdbusmenu-qt/com.canonical.dbusmenu.xml
+     libdbusmenu-qt/dbusmenuexporterdbus_p.h DBusMenuExporterDBus
    )
 
    target_sources(KF6StatusNotifierItem PRIVATE
