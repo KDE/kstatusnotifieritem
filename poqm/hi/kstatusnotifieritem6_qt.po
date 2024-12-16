@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: 2024-12-15 17:36+0530\n"
+"Last-Translator: Kali <EMAIL@ADDRESS>\n"
+"Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1136
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "&Minimize"
+msgstr "&छोटा करना"
+
+#: kstatusnotifieritem.cpp:875
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "Quit"
+msgstr "छोड़ना"
+
+#: kstatusnotifieritem.cpp:1133
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "&Restore"
+msgstr "&पुनर्स्थापित करना"
+
+#: kstatusnotifieritem.cpp:1161
+msgctxt "KStatusNotifierItem|@title:window"
+msgid "Confirm Quit From System Tray"
+msgstr "सिस्टम ट्रे से बाहर निकलने की पुष्टि करें"
+
+#: kstatusnotifieritem.cpp:1162
+#, qt-format
+msgctxt "KStatusNotifierItem|"
+msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
+msgstr "<qt>क्या आप वाकई <b>%1</b> छोड़ना चाहते हैं?</qt>"
+
+#: kstatusnotifieritem.cpp:1167
+msgctxt "KStatusNotifierItem|@action:button"
+msgid "Quit"
+msgstr "छोड़ना"
