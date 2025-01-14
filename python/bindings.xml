@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+SPDX-FileCopyrightText: 2025 Fushan Wen <qydwhotmail@gmail.com>
+SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
+-->
+<typesystem package="KStatusNotifierItem">
+    <load-typesystem name="typesystem_core.xml" generate="no"/>
+    <load-typesystem name="typesystem_gui.xml" generate="no"/> <!--QIcon-->
+    <load-typesystem name="typesystem_widgets.xml" generate="no"/> <!--QMenu-->
+    <object-type name="KStatusNotifierItem">
+        <enum-type name="ItemStatus" />
+        <enum-type name="ItemCategory" />
+        <modify-function signature="setContextMenu(QMenu *)">
+            <modify-argument index="1">
+                <define-ownership class="target" owner="c++" />
+            </modify-argument>
+        </modify-function>
+    </object-type>
+</typesystem>

@@ -8,6 +8,7 @@
 #ifndef KSTATUSNOTIFIERITEM_H
 #define KSTATUSNOTIFIERITEM_H
 
+#include <QMenu>
 #include <QObject>
 #include <QPoint>
 #include <QString>
@@ -18,7 +19,6 @@
 #include <memory>
 
 class QAction;
-class QMenu;
 
 class KStatusNotifierItemPrivate;
 
