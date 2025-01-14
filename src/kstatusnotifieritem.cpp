@@ -1253,12 +1253,17 @@ KDbusImageVector KStatusNotifierItemPrivate::iconToVector(const QIcon &icon)
     QPixmap iconPixmap;
 
     // if an icon exactly that size wasn't found don't add it to the vector
-    const auto lstSizes = icon.availableSizes();
+    auto lstSizes = icon.availableSizes();
+    if (lstSizes.isEmpty() && !icon.isNull()) {
+        // if the icon is a svg icon, then available Sizes will be empty, try some common sizes
+        lstSizes = {{16, 16}, {22, 22}, {32, 32}};
+    }
     for (QSize size : lstSizes) {
         iconPixmap = icon.pixmap(size);
-        iconVector.append(imageToStruct(iconPixmap.toImage()));
+        if (!iconPixmap.isNull()) {
+            iconVector.append(imageToStruct(iconPixmap.toImage()));
+        }
     }
-
     return iconVector;
 }
 #endif
