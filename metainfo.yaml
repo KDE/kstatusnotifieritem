@@ -10,7 +10,7 @@ portingAid: false
 deprecated: false
 release: true
 libraries:
- - cmake: "KF6::StatusNotifierItem"
+    - cmake: "KF6::StatusNotifierItem"
 cmakename: KF6StatusNotifierItem
 
 public_lib: true
