@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Qt-Contexts: true\n"
 
-#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1136
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1137
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "Minimalizovať"
@@ -26,23 +26,23 @@ msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Ukončiť"
 
-#: kstatusnotifieritem.cpp:1133
+#: kstatusnotifieritem.cpp:1134
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "Obnoviť"
 
-#: kstatusnotifieritem.cpp:1161
+#: kstatusnotifieritem.cpp:1162
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "Potvrdiť ukončenie zo systémovej lišty"
 
-#: kstatusnotifieritem.cpp:1162
+#: kstatusnotifieritem.cpp:1163
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>Naozaj chcete ukončiť <b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1167
+#: kstatusnotifieritem.cpp:1168
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "Ukončiť"

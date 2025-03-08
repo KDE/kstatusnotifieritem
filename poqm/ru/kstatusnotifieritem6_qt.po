@@ -14,7 +14,7 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 23.08.4\n"
 
-#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1136
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1137
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&Свернуть"
@@ -24,23 +24,23 @@ msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Выход"
 
-#: kstatusnotifieritem.cpp:1133
+#: kstatusnotifieritem.cpp:1134
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Восстановить"
 
-#: kstatusnotifieritem.cpp:1161
+#: kstatusnotifieritem.cpp:1162
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "Подтверждение выхода из программы"
 
-#: kstatusnotifieritem.cpp:1162
+#: kstatusnotifieritem.cpp:1163
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>Выйти из приложения<b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1167
+#: kstatusnotifieritem.cpp:1168
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "Выход"
