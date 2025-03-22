@@ -11,6 +11,7 @@
 #include "kstatusnotifieritemprivate_p.h"
 
 #include <QMenu>
+#include <QMetaMethod>
 
 #include <kwindowsystem.h>
 
@@ -158,7 +159,12 @@ QString KStatusNotifierItemDBus::service() const
 
 bool KStatusNotifierItemDBus::ItemIsMenu() const
 {
-    return false;
+    if (!m_statusNotifierItem->d->associatedWindow
+        && !m_statusNotifierItem->isSignalConnected(QMetaMethod::fromSignal(&KStatusNotifierItem::activateRequested))) {
+        return m_statusNotifierItem->standardActionsEnabled() || (m_statusNotifierItem->contextMenu() && !m_statusNotifierItem->contextMenu()->isEmpty());
+    } else {
+        return false;
+    }
 }
 
 // DBUS slots
