@@ -467,6 +467,23 @@ public:
      */
     void abortQuit();
 
+    /**
+     * Indictates that this item only supports the context menu. Instead of sending
+     * activate the provided the menu will be shown.
+     *
+     * @see setContextMenu
+     *
+     * @since 6.14
+     */
+    void setIsMenu(bool isMenu);
+
+    /**
+     * \return if the item indicates that it only supports the context menu.
+     *
+     * @since 6.14
+     */
+    bool isMenu() const;
+
 public Q_SLOTS:
 
     /**

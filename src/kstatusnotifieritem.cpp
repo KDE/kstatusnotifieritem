@@ -680,6 +680,16 @@ QString KStatusNotifierItem::providedToken() const
 #endif
 }
 
+void KStatusNotifierItem::setIsMenu(bool isMenu)
+{
+    d->isMenu = isMenu;
+}
+
+bool KStatusNotifierItem::isMenu() const
+{
+    return d->isMenu;
+}
+
 bool KStatusNotifierItemPrivate::checkVisibility(QPoint pos, bool perform)
 {
     // mapped = visible (but possibly obscured)

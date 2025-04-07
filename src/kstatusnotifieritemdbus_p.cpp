@@ -158,7 +158,7 @@ QString KStatusNotifierItemDBus::service() const
 
 bool KStatusNotifierItemDBus::ItemIsMenu() const
 {
-    return false;
+    return m_statusNotifierItem->isMenu();
 }
 
 // DBUS slots
