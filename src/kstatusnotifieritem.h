@@ -351,8 +351,6 @@ public:
      * Sets a new context menu for this StatusNotifierItem.
      * the menu will be shown with a contextMenu(int,int)
      * call by the systemtray over D-Bus
-     * usually you don't need to call this unless you want to use
-     * a custom QMenu subclass as context menu.
      *
      * The KStatusNotifierItem instance takes ownership of the menu,
      * and will delete it upon its destruction.
@@ -478,7 +476,7 @@ public:
     void setIsMenu(bool isMenu);
 
     /**
-     * \return if the item indicates that it only supports the context menu.
+     * @return if the item indicates that it only supports the context menu.
      *
      * @since 6.14
      */
