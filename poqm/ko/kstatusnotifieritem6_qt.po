@@ -13,27 +13,27 @@ msgstr ""
 "X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
-#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1137
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1147
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "최소화(&M)"
 
-#: kstatusnotifieritem.cpp:875
+#: kstatusnotifieritem.cpp:885
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "끝내기"
 
-#: kstatusnotifieritem.cpp:1134
+#: kstatusnotifieritem.cpp:1144
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "복원(&R)"
 
-#: kstatusnotifieritem.cpp:1162
+#: kstatusnotifieritem.cpp:1172
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "시스템 트레이에서 종료 확인"
 
-#: kstatusnotifieritem.cpp:1163
+#: kstatusnotifieritem.cpp:1173
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
@@ -41,7 +41,7 @@ msgstr ""
 "<qt><b>%1</b>을(를) 종료하시겠습니까?</qt>|/|<qt><b>%1</b>$[을를 %1] 종료하시"
 "겠습니까?</qt>"
 
-#: kstatusnotifieritem.cpp:1168
+#: kstatusnotifieritem.cpp:1178
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "끝내기"

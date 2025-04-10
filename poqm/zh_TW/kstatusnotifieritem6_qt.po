@@ -13,33 +13,33 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 23.08.4\n"
 
-#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1137
+#: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1147
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "最小化(&M)"
 
-#: kstatusnotifieritem.cpp:875
+#: kstatusnotifieritem.cpp:885
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "離開"
 
-#: kstatusnotifieritem.cpp:1134
+#: kstatusnotifieritem.cpp:1144
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "回復(&R)"
 
-#: kstatusnotifieritem.cpp:1162
+#: kstatusnotifieritem.cpp:1172
 msgctxt "KStatusNotifierItem|@title:window"
 msgid "Confirm Quit From System Tray"
 msgstr "確定要離開系統匣"
 
-#: kstatusnotifieritem.cpp:1163
+#: kstatusnotifieritem.cpp:1173
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
 msgstr "<qt>您確定要離開 <b>%1</b> 嗎？</qt>"
 
-#: kstatusnotifieritem.cpp:1168
+#: kstatusnotifieritem.cpp:1178
 msgctxt "KStatusNotifierItem|@action:button"
 msgid "Quit"
 msgstr "離開"
