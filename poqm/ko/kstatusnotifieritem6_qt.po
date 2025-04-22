@@ -1,8 +1,8 @@
-# Shinjo Park <kde@peremen.name>, 2023.
+# SPDX-FileCopyrightText: 2023, 2025 Shinjo Park <kde@peremen.name>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-08-27 01:03+0200\n"
+"PO-Revision-Date: 2025-04-21 19:19+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: kstatusnotifieritem.cpp:519 kstatusnotifieritem.cpp:1147
@@ -37,9 +37,7 @@ msgstr "시스템 트레이에서 종료 확인"
 #, qt-format
 msgctxt "KStatusNotifierItem|"
 msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-msgstr ""
-"<qt><b>%1</b>을(를) 종료하시겠습니까?</qt>|/|<qt><b>%1</b>$[을를 %1] 종료하시"
-"겠습니까?</qt>"
+msgstr "<qt><b>%1</b>을(를) 종료하시겠습니까?</qt>"
 
 #: kstatusnotifieritem.cpp:1178
 msgctxt "KStatusNotifierItem|@action:button"
