@@ -23,10 +23,6 @@
 #include <QFontDatabase>
 #endif
 
-#define slots
-#include <QtWidgets/private/qwidgetwindow_p.h>
-#undef slots
-
 #if HAVE_DBUS
 #include "kstatusnotifieritemdbus_p.h"
 
@@ -1214,21 +1210,11 @@ void KStatusNotifierItemPrivate::minimizeRestore(bool show)
     if (show) {
         Qt::WindowState state = (Qt::WindowState)(associatedWindow->windowState() & ~Qt::WindowMinimized);
         associatedWindow->setWindowState(state);
-        // Work around https://bugreports.qt.io/browse/QTBUG-120316
-        if (auto *widgetwindow = static_cast<QWidgetWindow*>(associatedWindow->qt_metacast("QWidgetWindow"))) {
-            widgetwindow->widget()->show();
-        } else {
-            associatedWindow->show();
-        }
+        associatedWindow->show();
         associatedWindow->raise();
         KWindowSystem::activateWindow(associatedWindow);
     } else {
-        // Work around https://bugreports.qt.io/browse/QTBUG-120316
-        if (auto *widgetwindow = static_cast<QWidgetWindow*>(associatedWindow->qt_metacast("QWidgetWindow"))) {
-            widgetwindow->widget()->hide();
-        } else {
-            associatedWindow->hide();
-        }
+        associatedWindow->hide();
     }
 }
 

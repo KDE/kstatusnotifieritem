@@ -44,10 +44,6 @@ set(REQUIRED_QT_VERSION 6.7.0)
 
 find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Widgets)
 
-if (Qt6Gui_VERSION VERSION_GREATER_EQUAL "6.10.0")
-    find_package(Qt6WidgetsPrivate ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE)
-endif()
-
 if (NOT APPLE AND NOT WIN32)
     option(WITHOUT_X11 "Build without X11 support (skips finding X11)." OFF)
     if(NOT WITHOUT_X11)

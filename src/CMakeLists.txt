@@ -94,8 +94,6 @@ if (TARGET KF6::WindowSystem)
     target_link_libraries(KF6StatusNotifierItem PRIVATE KF6::WindowSystem)
 endif()
 
-target_link_libraries(KF6StatusNotifierItem PRIVATE Qt6::WidgetsPrivate)
-
 if(APPLE)
   target_link_libraries(KF6StatusNotifierItem PRIVATE "-framework Foundation" "-framework AppKit")
 endif()
