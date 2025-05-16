@@ -18,6 +18,8 @@ depends += \
     qtgui \
     qtwidgets
 
+navigation.landingpage = "KStatusNotifierItem"
+
 qhp.projects            = KStatusNotifieritem
 
 qhp.KStatusNotifierItem.file                = kstatusnotifieritem.qhp
