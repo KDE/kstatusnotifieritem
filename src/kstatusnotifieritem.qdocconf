@@ -20,7 +20,7 @@ depends += \
 
 navigation.landingpage = "KStatusNotifierItem"
 
-qhp.projects            = KStatusNotifieritem
+qhp.projects            = KStatusNotifierItem
 
 qhp.KStatusNotifierItem.file                = kstatusnotifieritem.qhp
 qhp.KStatusNotifierItem.namespace           = org.kde.kstatusnotifieritem.$QT_VERSION_TAG
