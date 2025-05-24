@@ -33,3 +33,5 @@ qhp.KStatusNotifierItem.subprojects.classes.title = C++ Classes
 qhp.KStatusNotifierItem.subprojects.classes.indexTitle = KStatusNotifierItem C++ Classes
 qhp.KStatusNotifierItem.subprojects.classes.selectors = class fake:headerfile
 qhp.KStatusNotifierItem.subprojects.classes.sortPages = true
+
+tagfile = kstatusnotifieritem.tags
