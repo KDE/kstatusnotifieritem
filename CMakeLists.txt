@@ -72,16 +72,22 @@ ecm_set_disabled_deprecation_versions(
     KF 6.13
 )
 
-add_subdirectory(src)
+option(BUILD_PYTHON_BINDINGS "Build Python bindings" ON)
 
-# For the Python bindings
-find_package(Python3 3.9 COMPONENTS Interpreter Development)
-find_package(Shiboken6)
-find_package(PySide6)
+# Only Linux and FreeBSD CI has the relevant packages
+if (ANDROID OR APPLE OR WIN32 OR NOT BUILD_SHARED_LIBS)
+    set(BUILD_PYTHON_BINDINGS OFF)
+endif()
 
-include(CMakeDependentOption)
-cmake_dependent_option(BUILD_PYTHON_BINDINGS "Generate Python Bindings" ON "TARGET Shiboken6::libshiboken AND TARGET PySide6::pyside6" OFF)
+if (BUILD_PYTHON_BINDINGS)
+    find_package(Python3 3.9 REQUIRED COMPONENTS Interpreter Development)
+    find_package(Shiboken6 REQUIRED)
+    find_package(PySide6 REQUIRED)
+endif()
+
 add_feature_info(PYTHON_BINDINGS ${BUILD_PYTHON_BINDINGS} "Python bindings")
+
+add_subdirectory(src)
 
 if (BUILD_PYTHON_BINDINGS)
     include(ECMGeneratePythonBindings)
