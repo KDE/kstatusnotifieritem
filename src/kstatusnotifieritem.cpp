@@ -884,7 +884,7 @@ void KStatusNotifierItemPrivate::init(const QString &extraId)
     // some apps like kalarm or korgac have a hack to rewire the connection
     // of the "quit" action to a own slot, and rely on the name-based slot to disconnect
     // quitRequested/abortQuit was added for this use case
-    QObject::connect(action, SIGNAL(triggered()), q, SLOT(maybeQuit()));
+    QObject::connect(action, SIGNAL(triggered()), q, SLOT(quit()));
     actionCollection.insert(QStringLiteral("quit"), action);
 
     id = title;
@@ -1151,7 +1151,7 @@ void KStatusNotifierItem::abortQuit()
     d->quitAborted = true;
 }
 
-void KStatusNotifierItemPrivate::maybeQuit()
+void KStatusNotifierItemPrivate::quit()
 {
     Q_EMIT q->quitRequested();
 
@@ -1160,23 +1160,7 @@ void KStatusNotifierItemPrivate::maybeQuit()
         return;
     }
 
-    QString caption = QGuiApplication::applicationDisplayName();
-    if (caption.isEmpty()) {
-        caption = QCoreApplication::applicationName();
-    }
-
-    const QString title = KStatusNotifierItem::tr("Confirm Quit From System Tray", "@title:window");
-    const QString query = KStatusNotifierItem::tr("<qt>Are you sure you want to quit <b>%1</b>?</qt>").arg(caption);
-
-    auto *dialog = new QMessageBox(QMessageBox::Question, title, query, QMessageBox::NoButton);
-    dialog->setAttribute(Qt::WA_DeleteOnClose);
-
-    auto *quitButton = dialog->addButton(KStatusNotifierItem::tr("Quit", "@action:button"), QMessageBox::AcceptRole);
-    quitButton->setIcon(QIcon::fromTheme(QStringLiteral("application-exit")));
-    dialog->addButton(QMessageBox::Cancel);
-    QObject::connect(dialog, &QDialog::accepted, qApp, &QApplication::quit);
-    dialog->show();
-    dialog->windowHandle()->setTransientParent(associatedWindow);
+    qApp->quit();
 }
 
 void KStatusNotifierItemPrivate::minimizeRestore()
