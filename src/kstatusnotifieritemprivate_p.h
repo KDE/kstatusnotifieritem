@@ -102,7 +102,7 @@ public:
     void setLegacySystemTrayEnabled(bool enabled);
     void syncLegacySystemTrayIcon();
     void contextMenuAboutToShow();
-    void maybeQuit();
+    void quit();
     void minimizeRestore();
     void minimizeRestore(bool show);
     void hideMenu();
