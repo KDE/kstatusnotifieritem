@@ -28,18 +28,14 @@ msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Wiederherstellen"
 
-#: kstatusnotifieritem.cpp:1168
-msgctxt "KStatusNotifierItem|@title:window"
-msgid "Confirm Quit From System Tray"
-msgstr "Beenden über Systembereich der Kontrollleiste bestätigen"
+#~ msgctxt "KStatusNotifierItem|@title:window"
+#~ msgid "Confirm Quit From System Tray"
+#~ msgstr "Beenden über Systembereich der Kontrollleiste bestätigen"
 
-#: kstatusnotifieritem.cpp:1169
-#, qt-format
-msgctxt "KStatusNotifierItem|"
-msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-msgstr "<qt>Möchten Sie <b>%1</b> beenden?</qt>"
+#~ msgctxt "KStatusNotifierItem|"
+#~ msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
+#~ msgstr "<qt>Möchten Sie <b>%1</b> beenden?</qt>"
 
-#: kstatusnotifieritem.cpp:1174
-msgctxt "KStatusNotifierItem|@action:button"
-msgid "Quit"
-msgstr "Beenden"
+#~ msgctxt "KStatusNotifierItem|@action:button"
+#~ msgid "Quit"
+#~ msgstr "Beenden"

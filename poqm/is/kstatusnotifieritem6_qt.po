@@ -28,18 +28,14 @@ msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "Endu&rheimta"
 
-#: kstatusnotifieritem.cpp:1168
-msgctxt "KStatusNotifierItem|@title:window"
-msgid "Confirm Quit From System Tray"
-msgstr "Staðfesta þegar þú vilt hætta með því að nota hnapp í kerfisbakka"
+#~ msgctxt "KStatusNotifierItem|@title:window"
+#~ msgid "Confirm Quit From System Tray"
+#~ msgstr "Staðfesta þegar þú vilt hætta með því að nota hnapp í kerfisbakka"
 
-#: kstatusnotifieritem.cpp:1169
-#, qt-format
-msgctxt "KStatusNotifierItem|"
-msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-msgstr "<qt>Ertu viss um að þú viljir hætta í <b>%1</b>?</qt>"
+#~ msgctxt "KStatusNotifierItem|"
+#~ msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
+#~ msgstr "<qt>Ertu viss um að þú viljir hætta í <b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1174
-msgctxt "KStatusNotifierItem|@action:button"
-msgid "Quit"
-msgstr "Hætta"
+#~ msgctxt "KStatusNotifierItem|@action:button"
+#~ msgid "Quit"
+#~ msgstr "Hætta"

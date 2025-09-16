@@ -28,18 +28,14 @@ msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Obnovit"
 
-#: kstatusnotifieritem.cpp:1168
-msgctxt "KStatusNotifierItem|@title:window"
-msgid "Confirm Quit From System Tray"
-msgstr "Potvrzení ukončení ze systémového panelu"
+#~ msgctxt "KStatusNotifierItem|@title:window"
+#~ msgid "Confirm Quit From System Tray"
+#~ msgstr "Potvrzení ukončení ze systémového panelu"
 
-#: kstatusnotifieritem.cpp:1169
-#, qt-format
-msgctxt "KStatusNotifierItem|"
-msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-msgstr "<qt>Opravdu si přejete opustit <b>%1</b>?</qt>"
+#~ msgctxt "KStatusNotifierItem|"
+#~ msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
+#~ msgstr "<qt>Opravdu si přejete opustit <b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1174
-msgctxt "KStatusNotifierItem|@action:button"
-msgid "Quit"
-msgstr "Ukončit"
+#~ msgctxt "KStatusNotifierItem|@action:button"
+#~ msgid "Quit"
+#~ msgstr "Ukončit"

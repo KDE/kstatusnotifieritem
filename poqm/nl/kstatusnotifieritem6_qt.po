@@ -28,18 +28,14 @@ msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "He&rstellen"
 
-#: kstatusnotifieritem.cpp:1168
-msgctxt "KStatusNotifierItem|@title:window"
-msgid "Confirm Quit From System Tray"
-msgstr "Afsluiten vanuit systeemvak bevestigen"
+#~ msgctxt "KStatusNotifierItem|@title:window"
+#~ msgid "Confirm Quit From System Tray"
+#~ msgstr "Afsluiten vanuit systeemvak bevestigen"
 
-#: kstatusnotifieritem.cpp:1169
-#, qt-format
-msgctxt "KStatusNotifierItem|"
-msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-msgstr "<qt>Wilt u <b>%1</b> afsluiten?</qt>"
+#~ msgctxt "KStatusNotifierItem|"
+#~ msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
+#~ msgstr "<qt>Wilt u <b>%1</b> afsluiten?</qt>"
 
-#: kstatusnotifieritem.cpp:1174
-msgctxt "KStatusNotifierItem|@action:button"
-msgid "Quit"
-msgstr "Afsluiten"
+#~ msgctxt "KStatusNotifierItem|@action:button"
+#~ msgid "Quit"
+#~ msgstr "Afsluiten"

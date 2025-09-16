@@ -29,18 +29,14 @@ msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&שחזור"
 
-#: kstatusnotifieritem.cpp:1168
-msgctxt "KStatusNotifierItem|@title:window"
-msgid "Confirm Quit From System Tray"
-msgstr "אישור יציאה משורת המשימות"
+#~ msgctxt "KStatusNotifierItem|@title:window"
+#~ msgid "Confirm Quit From System Tray"
+#~ msgstr "אישור יציאה משורת המשימות"
 
-#: kstatusnotifieritem.cpp:1169
-#, qt-format
-msgctxt "KStatusNotifierItem|"
-msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-msgstr "<qt>לצאת מ־<b>%1</b>?</qt>"
+#~ msgctxt "KStatusNotifierItem|"
+#~ msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
+#~ msgstr "<qt>לצאת מ־<b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1174
-msgctxt "KStatusNotifierItem|@action:button"
-msgid "Quit"
-msgstr "לצאת"
+#~ msgctxt "KStatusNotifierItem|@action:button"
+#~ msgid "Quit"
+#~ msgstr "לצאת"

@@ -28,18 +28,14 @@ msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&निर्यत्"
 
-#: kstatusnotifieritem.cpp:1168
-msgctxt "KStatusNotifierItem|@title:window"
-msgid "Confirm Quit From System Tray"
-msgstr "सङ्गणकतन्त्रस्य पात्रम् तः निर्गमनस्य पुष्टिं कुर्वन्तु"
+#~ msgctxt "KStatusNotifierItem|@title:window"
+#~ msgid "Confirm Quit From System Tray"
+#~ msgstr "सङ्गणकतन्त्रस्य पात्रम् तः निर्गमनस्य पुष्टिं कुर्वन्तु"
 
-#: kstatusnotifieritem.cpp:1169
-#, qt-format
-msgctxt "KStatusNotifierItem|"
-msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-msgstr "<qt>किं भवन्तः निश्चितरूपेण त्यक्तुम् इच्छन्ति <b>%1</b>?</qt>"
+#~ msgctxt "KStatusNotifierItem|"
+#~ msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
+#~ msgstr "<qt>किं भवन्तः निश्चितरूपेण त्यक्तुम् इच्छन्ति <b>%1</b>?</qt>"
 
-#: kstatusnotifieritem.cpp:1174
-msgctxt "KStatusNotifierItem|@action:button"
-msgid "Quit"
-msgstr "त्यजतु"
+#~ msgctxt "KStatusNotifierItem|@action:button"
+#~ msgid "Quit"
+#~ msgstr "त्यजतु"
