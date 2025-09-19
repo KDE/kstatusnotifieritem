@@ -32,15 +32,3 @@ msgstr "Avslutt"
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Gjenopprett"
-
-#~ msgctxt "KStatusNotifierItem|@title:window"
-#~ msgid "Confirm Quit From System Tray"
-#~ msgstr "Stadfest «Avslutt» frå systemtrauet"
-
-#~ msgctxt "KStatusNotifierItem|"
-#~ msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-#~ msgstr "<qt>Er du sikker på at du vil avslutta <b>%1</b>?</qt>"
-
-#~ msgctxt "KStatusNotifierItem|@action:button"
-#~ msgid "Quit"
-#~ msgstr "Avslutt"
