@@ -12,7 +12,6 @@
 
 #include <QApplication>
 #include <QImage>
-#include <QMenu>
 #include <QMessageBox>
 #include <QMovie>
 #include <QPainter>
