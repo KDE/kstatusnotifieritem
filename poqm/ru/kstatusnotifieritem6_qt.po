@@ -14,17 +14,17 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 23.08.4\n"
 
-#: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1143
+#: kstatusnotifieritem.cpp:514 kstatusnotifieritem.cpp:1142
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&Свернуть"
 
-#: kstatusnotifieritem.cpp:881
+#: kstatusnotifieritem.cpp:880
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Выход"
 
-#: kstatusnotifieritem.cpp:1140
+#: kstatusnotifieritem.cpp:1139
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Восстановить"

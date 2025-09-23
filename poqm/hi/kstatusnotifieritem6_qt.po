@@ -11,17 +11,17 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1143
+#: kstatusnotifieritem.cpp:514 kstatusnotifieritem.cpp:1142
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&छोटा करना"
 
-#: kstatusnotifieritem.cpp:881
+#: kstatusnotifieritem.cpp:880
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "छोड़ना"
 
-#: kstatusnotifieritem.cpp:1140
+#: kstatusnotifieritem.cpp:1139
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&पुनर्स्थापित करना"

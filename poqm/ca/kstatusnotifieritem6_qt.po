@@ -18,17 +18,17 @@ msgstr ""
 "X-Generator: Lokalize 23.04.3\n"
 "X-Qt-Contexts: true\n"
 
-#: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1143
+#: kstatusnotifieritem.cpp:514 kstatusnotifieritem.cpp:1142
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&Minimitza"
 
-#: kstatusnotifieritem.cpp:881
+#: kstatusnotifieritem.cpp:880
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Surt"
 
-#: kstatusnotifieritem.cpp:1140
+#: kstatusnotifieritem.cpp:1139
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Restaura"

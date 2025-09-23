@@ -13,17 +13,17 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 "X-Generator: Poedit 3.3.2\n"
 
-#: kstatusnotifieritem.cpp:515 kstatusnotifieritem.cpp:1143
+#: kstatusnotifieritem.cpp:514 kstatusnotifieritem.cpp:1142
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&ჩაკეცვა"
 
-#: kstatusnotifieritem.cpp:881
+#: kstatusnotifieritem.cpp:880
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "გასვლა"
 
-#: kstatusnotifieritem.cpp:1140
+#: kstatusnotifieritem.cpp:1139
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "ა&ღდგენა"
