@@ -27,15 +27,3 @@ msgstr "Ukončit"
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Obnovit"
-
-#~ msgctxt "KStatusNotifierItem|@title:window"
-#~ msgid "Confirm Quit From System Tray"
-#~ msgstr "Potvrzení ukončení ze systémového panelu"
-
-#~ msgctxt "KStatusNotifierItem|"
-#~ msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-#~ msgstr "<qt>Opravdu si přejete opustit <b>%1</b>?</qt>"
-
-#~ msgctxt "KStatusNotifierItem|@action:button"
-#~ msgid "Quit"
-#~ msgstr "Ukončit"
