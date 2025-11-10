@@ -27,15 +27,3 @@ msgstr "Изход"
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Възстановяване"
-
-#~ msgctxt "KStatusNotifierItem|@title:window"
-#~ msgid "Confirm Quit From System Tray"
-#~ msgstr "Потвърждение за изход от системната област"
-
-#~ msgctxt "KStatusNotifierItem|"
-#~ msgid "<qt>Are you sure you want to quit <b>%1</b>?</qt>"
-#~ msgstr "<qt>Наистина ли искате да излезете от <b>%1</b>?</qt>"
-
-#~ msgctxt "KStatusNotifierItem|@action:button"
-#~ msgid "Quit"
-#~ msgstr "Изход"
