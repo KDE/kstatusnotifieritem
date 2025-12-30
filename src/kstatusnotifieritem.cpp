@@ -488,15 +488,19 @@ QMenu *KStatusNotifierItem::contextMenu() const
 
 void KStatusNotifierItem::setAssociatedWindow(QWindow *associatedWindow)
 {
+    if (associatedWindow == d->associatedWindow) {
+        return;
+    }
+
+    if (d->associatedWindow) {
+        d->associatedWindow->removeEventFilter(this);
+        d->associatedWindow = nullptr;
+    }
+
     if (associatedWindow) {
         d->associatedWindow = associatedWindow;
         d->associatedWindow->installEventFilter(this);
         d->associatedWindowPos = QPoint(-1, -1);
-    } else {
-        if (d->associatedWindow) {
-            d->associatedWindow->removeEventFilter(this);
-            d->associatedWindow = nullptr;
-        }
     }
 
     if (d->systemTrayIcon) {
