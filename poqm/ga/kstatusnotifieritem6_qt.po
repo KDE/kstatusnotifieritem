@@ -1,0 +1,21 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+
+#: kstatusnotifieritem.cpp:514 kstatusnotifieritem.cpp:1142
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "&Minimize"
+msgstr ""
+
+#: kstatusnotifieritem.cpp:880
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "Quit"
+msgstr ""
+
+#: kstatusnotifieritem.cpp:1139
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "&Restore"
+msgstr ""
