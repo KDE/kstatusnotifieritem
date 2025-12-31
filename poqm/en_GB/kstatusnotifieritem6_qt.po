@@ -13,17 +13,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 24.02.2\n"
 
-#: kstatusnotifieritem.cpp:514 kstatusnotifieritem.cpp:1142
+#: kstatusnotifieritem.cpp:518 kstatusnotifieritem.cpp:1146
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&Minimise"
 
-#: kstatusnotifieritem.cpp:880
+#: kstatusnotifieritem.cpp:884
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Quit"
 
-#: kstatusnotifieritem.cpp:1139
+#: kstatusnotifieritem.cpp:1143
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Restore"

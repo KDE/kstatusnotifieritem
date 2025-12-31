@@ -13,17 +13,17 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Qt-Contexts: true\n"
 
-#: kstatusnotifieritem.cpp:514 kstatusnotifieritem.cpp:1142
+#: kstatusnotifieritem.cpp:518 kstatusnotifieritem.cpp:1146
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "Z&minimalizuj"
 
-#: kstatusnotifieritem.cpp:880
+#: kstatusnotifieritem.cpp:884
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Zakończ"
 
-#: kstatusnotifieritem.cpp:1139
+#: kstatusnotifieritem.cpp:1143
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "Przyw&róć"

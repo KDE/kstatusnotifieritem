@@ -14,17 +14,17 @@ msgstr ""
 "2);\n"
 "X-Generator: Lokalize 23.08.5\n"
 
-#: kstatusnotifieritem.cpp:514 kstatusnotifieritem.cpp:1142
+#: kstatusnotifieritem.cpp:518 kstatusnotifieritem.cpp:1146
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "&Minimizēt"
 
-#: kstatusnotifieritem.cpp:880
+#: kstatusnotifieritem.cpp:884
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "Iziet"
 
-#: kstatusnotifieritem.cpp:1139
+#: kstatusnotifieritem.cpp:1143
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "&Atjaunot"

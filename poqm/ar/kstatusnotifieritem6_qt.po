@@ -13,17 +13,17 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Qt-Contexts: true\n"
 
-#: kstatusnotifieritem.cpp:514 kstatusnotifieritem.cpp:1142
+#: kstatusnotifieritem.cpp:518 kstatusnotifieritem.cpp:1146
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Minimize"
 msgstr "ص&غّر"
 
-#: kstatusnotifieritem.cpp:880
+#: kstatusnotifieritem.cpp:884
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "Quit"
 msgstr "أنهِ"
 
-#: kstatusnotifieritem.cpp:1139
+#: kstatusnotifieritem.cpp:1143
 msgctxt "KStatusNotifierItem|@action:inmenu"
 msgid "&Restore"
 msgstr "ا&ستعد"
