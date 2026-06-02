@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
+"Language-Team: \n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 3.9\n"
+
+#: kstatusnotifieritem.cpp:518 kstatusnotifieritem.cpp:1146
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "&Minimize"
+msgstr "كىچىكلەت(&M)"
+
+#: kstatusnotifieritem.cpp:884
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "Quit"
+msgstr "چىكىن"
+
+#: kstatusnotifieritem.cpp:1143
+msgctxt "KStatusNotifierItem|@action:inmenu"
+msgid "&Restore"
+msgstr "ئەسلىگە كەلتۈر(&R)"
