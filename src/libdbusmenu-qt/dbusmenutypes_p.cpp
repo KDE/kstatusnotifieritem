@@ -8,7 +8,6 @@
 
 // Local
 #include "dbusmenushortcut_p.h"
-#include "debug_p.h"
 
 // Qt
 #include <QDBusArgument>
