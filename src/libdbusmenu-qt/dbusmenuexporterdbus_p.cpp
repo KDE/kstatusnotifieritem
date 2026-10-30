@@ -13,7 +13,6 @@
 // Local
 #include "dbusmenuadaptor.h"
 #include "dbusmenuexporterprivate_p.h"
-#include "dbusmenushortcut_p.h"
 #include "debug_p.h"
 
 static const char *DBUSMENU_INTERFACE = "com.canonical.dbusmenu";

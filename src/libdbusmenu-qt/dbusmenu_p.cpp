@@ -14,7 +14,6 @@
 // Local
 #include "dbusmenuexporter.h"
 #include "dbusmenuexporterprivate_p.h"
-#include "debug_p.h"
 
 DBusMenu::DBusMenu(QMenu *menu, DBusMenuExporter *exporter, int parentId)
     : QObject(menu)
